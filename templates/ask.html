@@ -1,0 +1,104 @@
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+<html lang="en">
+<head>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <title>Home page</title>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <div class="container-fluid" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="{{ url_for('static', filename='Images/sima-logo.png') }}" alt="" width="120" height="50" class="d-inline-block align-text-top">
+      <br></br>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/ask">Ask</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <a class="btn btn-outline-secondary" role="button"class="nav-link active" aria-current="page" href="/login" >Login</a>          
+          </form>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+  
+
+        <div class="mesgs">
+          <div class="msg_history">
+            
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>أنشر على الفيسبوك اني مبسوط كثير</p>
+                <span class="time_date"> 10:01 AM    |    Yesterday</span> </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="{{ url_for('static', filename='Images/chatbot.png') }}" alt="Paris" width="70" height="70"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>تم النشر بناء على طلبكم</p>
+                  <span class="time_date"> 10:01 AM    |    Yesterday</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>ابعتلي مسج ل كرمل احكيلها تتصل علي</p>
+                <span class="time_date"> 11:01 AM    |    Today</span> </div>
+            </div>
+            <div class="incoming_msg">
+              
+              <div class="incoming_msg_img"> <img src="{{ url_for('static', filename='Images/chatbot.png') }}" alt="Paris" width="70" height="70"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>تم ارسال الرسالة </p>
+                  <span class="time_date"> 11:01 AM    |    Today</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Type a message" />
+              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    </div></div>
+    </body>
+    </html>
